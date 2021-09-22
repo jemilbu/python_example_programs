@@ -16,6 +16,16 @@ def largest_element(a,findLoc=False):
         return maxVal, maxLoc
     return maxVal
 
+def largest_el2(a, loc=False):
+    for (i,e) in enumerate(a):
+        if e > maxval:
+            maxval = e
+            maxLoc = i
+
+    if loc == True:
+        return maxval, maxLoc
+    return maxval
+
 if __name__ == "__main__":
 
     a = [1,2,3,2,1]
